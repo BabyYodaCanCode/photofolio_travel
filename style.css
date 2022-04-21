@@ -1,0 +1,112 @@
+html {
+  background-color: dimgrey;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/*#centro {
+    margin: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}*/
+
+#centro {
+  position: relative;
+  top: 15%;
+  left: 15%;
+}
+
+
+title {
+  text-align: center;
+}
+
+.dotmap {
+  width: 2000px;
+  overflow: hidden;
+}
+
+.dotmap .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.dot {
+  float: left;
+  display: inline-block;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  margin: 2px;
+}
+
+.minimal .dot.r16d37.europe{
+  background:red;
+}
+
+.minimal .dot.r13d33.europe{
+  background:red;
+}
+
+.minimal .dot.r15d35.europe{
+  background:red;
+}
+
+.water {
+  background: #C5EFF7;
+}
+
+.north-america {
+  background: #90C695;
+}
+
+.south-america {
+  background: #E26A6A;
+}
+
+.europe {
+  background: #BE90D4;
+}
+
+.africa {
+  background: #FDE3A7;
+}
+
+.asia {
+  background: #F4B350;
+}
+
+.australia {
+  background: #1E824C;
+}
+
+.minimal .water {
+  background: transparent;
+}
+.minimal .north-america, .minimal .south-america, .minimal .europe, .minimal .africa, .minimal .asia, .minimal .australia {
+  background: #eee;
+}
+
+@keyframes water {
+  0% {
+    background: lightcyan;
+  }
+  50% {
+    background: paleturquoise;
+  }
+  100% {
+    background: lightcyan;
+  }
+}
